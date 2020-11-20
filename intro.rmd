@@ -1,0 +1,64 @@
+---
+title: "Introduction to R Syntax"
+author: Jonathan
+output: html_notebook
+---
+```{r}
+# Results in "500"
+573 - 74 + 1
+
+# Results in "50"
+25 * 2
+
+# Results in "2"
+10 / 5
+
+# Calculation:
+25 * 4 + 9 / 3
+
+# This is a comment!
+# This code computes the volume of a cube
+3 * 3 * 3
+
+# Data Types
+class(2) # numeric -- any number
+class('hello') # character -- any grouping of characters, sometimes refered to as a string
+class('23') # character
+class(FALSE) # logical -- two possible values, TRUE or FALSE, sometimes called a boolean
+# vectors -- a list of related data, that is all the same type
+class(NA) # logical -- NA represents the absence of a value
+
+print('Jonathan')
+print(18)
+print('18')
+
+# Variables
+# assignment opperator: <-
+full_name <- 'Jonathan Reiterman'
+
+name <- 'Jonathan'
+age <- 18
+
+# Vectors
+spring_months <- c("March", "April", "May", "June")
+# Check the type of the elements in the vector
+typeof(spring_months)
+# Check the length of the vector
+length(spring_months)
+# Access individual elements
+print(spring_months[2]) # start counting from 1, not 0
+
+phone <- c(123, 456, 7890)
+
+# Conditionals
+message <- "I change based on a condition."
+
+if (TRUE) {
+  message <- 'I execute this when true!'
+} else {
+  message <- 'I execute this when false!'
+}
+
+print(message)
+
+```
