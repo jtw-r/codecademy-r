@@ -20,7 +20,8 @@ output: html_notebook
 # This code computes the volume of a cube
 3 * 3 * 3
 
-# Data Types
+
+## [Data Types] ##
 class(2) # numeric -- any number
 class('hello') # character -- any grouping of characters, sometimes refered to as a string
 class('23') # character
@@ -32,14 +33,16 @@ print('Jonathan')
 print(18)
 print('18')
 
-# Variables
+
+## [Variables] ##
 # assignment opperator: <-
 full_name <- 'Jonathan Reiterman'
 
 name <- 'Jonathan'
 age <- 18
 
-# Vectors
+
+## [Vectors] ##
 spring_months <- c("March", "April", "May", "June")
 # Check the type of the elements in the vector
 typeof(spring_months)
@@ -50,7 +53,8 @@ print(spring_months[2]) # start counting from 1, not 0
 
 phone <- c(123, 456, 7890)
 
-# Conditionals
+
+## [Conditionals] ##
 message <- "I change based on a condition."
 
 if (TRUE) {
@@ -60,5 +64,58 @@ if (TRUE) {
 }
 
 print(message)
+
+
+## [Comparison Operators] ##
+# Less than: <
+# Greater than: >
+# Less than or equal to: <=
+# Greater than or equal to: >=
+# Is equal to: ==
+# Is NOT equal to: !=
+
+56 >= 129 # False
+
+56 != 129 # True
+
+
+## [Logical Operators] ##
+# The AND operator: &
+# The OR operator: |
+# The NOT/bang operator: !
+
+message <- 'Should I pack an umbrella?'
+weather <- 'cloudy'
+high_chance_of_rain <- TRUE
+
+if (weather == 'cloudy' & high_chance_of_rain) {
+  message <- 'Pack umbrella!'
+} else {
+  message <- 'No need for umbrella'
+}
+
+print(message) # Pack umbrella
+
+
+## [Calling Functions] ##
+data <- c(120,22,22,31,15,120)
+unique_vals <- unique(data) # unique() returns values that don't have any duplicates
+print(unique_vals) # 120  22  31  15
+
+solution <- sqrt(49)
+print(solution) # 7
+
+round_down <- floor(3.14)
+round_up <- ceiling(3.14)
+print(round_down) # 3
+print(round_up) # 4
+
+
+## [Packages] ##
+# To install a package:
+#   install.packages('package-name')
+# You only need to run that once
+# To import a package:
+#   library(package-name)
 
 ```
